@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyMovie"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/appicon1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginName"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@+id/loginLogo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextstyle"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/loginUPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/loginUsername"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittextstyle"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/roundbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginUPassword"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyle"/>
+
+
+
+</RelativeLayout>
